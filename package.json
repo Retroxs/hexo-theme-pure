@@ -1,0 +1,8 @@
+{
+  "name": "hexo-theme-pure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Retroxs/hexo-theme-pure.git",
+  "author": "Retroxs <retroxsx@gmail.com>",
+  "license": "MIT"
+}
