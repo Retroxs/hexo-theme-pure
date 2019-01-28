@@ -1,0 +1,26 @@
+<head>
+    {{#> head}}
+    {{/head}}
+</head>
+
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-dark is-fixed-top">
+        <!-- navbar brand, navbar menu... -->
+        <div class="navbar-start">
+            <a class="navbar-item">
+                <img src="https://bulma.io/images/bulma-logo-white.png" width="112" height="28" alt="Bulma">
+            </a>
+        </div>
+        <div class="navbar-end">
+            {{#each theme.menu}}
+            <a class="navbar-item" href="{{this}}">
+                {{@key}}
+            </a>
+            {{/each}}
+        </div>
+    </nav>
+    {{> @partial-block }}
+</body>
+
+{{#> footer }}
+{{/footer}}

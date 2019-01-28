@@ -1,0 +1,27 @@
+{{#> layout}}
+
+{{#each page.posts.data}}
+<div class="card">
+  <div class="card-content">
+    <p class="title">
+      {{title}}
+    </p>
+    <p class="subtitle">
+    </p>
+  </div>
+  <footer class="card-footer">
+    <p class="card-footer-item">
+      <span>
+        View on <a href="{{path}}">Post</a>
+      </span>
+    </p>
+    <p class="card-footer-item">
+      <span>
+        Share on <a href="#">Facebook</a>
+      </span>
+    </p>
+  </footer>
+</div>
+{{/each}}
+
+{{/layout}}
