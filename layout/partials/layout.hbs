@@ -1,10 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     {{#> head}}
     {{/head}}
 </head>
 
-<body class="has-navbar-fixed-top">
-    <nav class="navbar is-dark is-fixed-top">
+<body>
+    <nav class="navbar is-dark">
         <!-- navbar brand, navbar menu... -->
         <div class="navbar-start">
             <a class="navbar-item">
@@ -12,15 +15,20 @@
             </a>
         </div>
         <div class="navbar-end">
-            {{#each theme.menu}}
+            {{!-- {{#each theme.menu}}
             <a class="navbar-item" href="{{this}}">
                 {{@key}}
             </a>
-            {{/each}}
+            {{/each}} --}}
         </div>
     </nav>
-    {{> @partial-block }}
+
+    <div class="container" style="margin-top:20px">
+        {{> @partial-block }}
+    </div>
+    
+    {{#> footer }}
+    {{/footer}}
 </body>
 
-{{#> footer }}
-{{/footer}}
+</html>

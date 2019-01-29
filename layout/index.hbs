@@ -1,27 +1,25 @@
 {{#> layout}}
 
-{{#each page.posts.data}}
-<div class="card">
-  <div class="card-content">
-    <p class="title">
-      {{title}}
-    </p>
-    <p class="subtitle">
-    </p>
+<div class="columns is-multiline is-mobile">
+  {{#each page.posts.data}}
+  <div class="column is-one-quarter">
+    <article class="message">
+      <div class="message-header">
+        <a href={{url_for path}}>
+          <p>{{title}}</p>
+        </a>
+      </div>
+      <div class="message-body">
+        <p>{{{excerpt}}}</p>
+      </div>
+    </article>
   </div>
-  <footer class="card-footer">
-    <p class="card-footer-item">
-      <span>
-        View on <a href="{{path}}">Post</a>
-      </span>
-    </p>
-    <p class="card-footer-item">
-      <span>
-        Share on <a href="#">Facebook</a>
-      </span>
-    </p>
-  </footer>
+  {{/each}}
+
+  <div class="container has-text-centered">
+      <a class="pagination-previous" href="{{url_for page.prev_link}}">Previous</a>
+      <a class="pagination-next" href="{{url_for page.next_link}}">Next page</a>
+  </div>
 </div>
-{{/each}}
 
 {{/layout}}

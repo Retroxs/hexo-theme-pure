@@ -1,10 +1,7 @@
 menu:
-    Blog: /
+    Index: /
     Archive: archives/
-    # Weibo: http://weibo.com/sunchongsheng
     GitHub: https://github.com/retroxs
-    # V: https://v2ex.codersky.me
-    # So: https://so.codersky.me
 
 favicon: favicon.ico
 logo: logo.png
